@@ -1,5 +1,5 @@
 /**
- * Fitness Trainer - Новый JS
+ * Fitness Trainer - TapLink Style
  * Анимации, форма, плавный скролл
  */
 
@@ -48,11 +48,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Обработка формы
     const contactForm = document.getElementById('contactForm');
-    
+
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             const formData = new FormData(this);
             const data = {
                 name: formData.get('name'),
@@ -60,15 +60,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 goal: formData.get('goal'),
                 date: new Date().toLocaleString('ru-RU')
             };
-            
+
             // Сохранение в localStorage
             const leads = JSON.parse(localStorage.getItem('fitnessLeads') || '[]');
             leads.push(data);
             localStorage.setItem('fitnessLeads', JSON.stringify(leads));
-            
+
             // Показ уведомления
             showNotification();
-            
+
             // Очистка формы
             this.reset();
         });
@@ -100,9 +100,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function showNotification() {
     const notification = document.getElementById('notification');
     if (!notification) return;
-    
+
     notification.classList.add('show');
-    
+
     setTimeout(() => {
         notification.classList.remove('show');
     }, 4000);
