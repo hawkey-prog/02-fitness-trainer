@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иван Петров - Персональный фитнес-тренер</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">FITNESS<span>PRO</span></a>
+                <nav class="nav">
+                    <a href="#about" class="nav-link">Обо мне</a>
+                    <a href="#programs" class="nav-link">Программы</a>
+                    <a href="#results" class="nav-link">Результаты</a>
+                    <a href="#reviews" class="nav-link">Отзывы</a>
+                    <a href="#contact" class="nav-link">Контакты</a>
+                </nav>
+                <a href="#contact" class="btn btn-primary header-btn">Записаться</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero-секция -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Персональный фитнес-тренер<br><span>Иван Петров</span></h1>
+                    <p class="hero-subtitle">10+ лет опыта • 500+ довольных клиентов • Мастер спорта</p>
+                    <p class="hero-description">
+                        Помогу достичь вашей идеальной формы с помощью индивидуальных программ тренировок и питания. 
+                        Без изнурительных диет и вреда для здоровья.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-large">Записаться на тренировку</a>
+                        <a href="#programs" class="btn btn-outline btn-large">Смотреть программы</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=600&fit=crop" 
+                         alt="Иван Петров - фитнес тренер"
+                         onerror="this.src='https://picsum.photos/500/600?random=1'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Обо мне -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=500&fit=crop" 
+                         alt="Тренер в зале"
+                         onerror="this.src='https://picsum.photos/500/500?random=2'">
+                </div>
+                <div class="about-text">
+                    <h3>Мой подход к тренировкам</h3>
+                    <p>
+                        Привет! Меня зовут Иван Петров, и я профессиональный фитнес-тренер с более чем 10-летним опытом. 
+                        За это время я помог сотням людей изменить свою жизнь к лучшему.
+                    </p>
+                    <p>
+                        Моя методика основана на научном подходе и индивидуальном плане для каждого клиента. 
+                        Я не верю в универсальные решения — каждый человек уникален, и программа тренировок 
+                        должна учитывать ваши особенности, цели и образ жизни.
+                    </p>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <span class="achievement-number">10+</span>
+                            <span class="achievement-label">лет опыта</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">500+</span>
+                            <span class="achievement-label">клиентов</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">3500+</span>
+                            <span class="achievement-label">кг сброшено</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">98%</span>
+                            <span class="achievement-label">довольных</span>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <h4>Сертификаты:</h4>
+                        <ul>
+                            <li>✓ Мастер спорта по бодибилдингу</li>
+                            <li>✓ Сертификация NASM Personal Trainer</li>
+                            <li>✓ Сертификация по спортивной нутрициологии</li>
+                            <li>✓ Сертификация по реабилитации и восстановлению</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программы тренировок -->
+    <section class="section programs" id="programs">
+        <div class="container">
+            <h2 class="section-title">Программы тренировок</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">🔥</div>
+                    <h3>Похудение</h3>
+                    <p class="program-description">
+                        Эффективная программа для снижения веса и сжигания жира. 
+                        Комбинация кардио и силовых тренировок с акцентом на дефицит калорий.
+                    </p>
+                    <ul class="program-features">
+                        <li>✓ 3 тренировки в неделю</li>
+                        <li>✓ Индивидуальный план питания</li>
+                        <li>✓ Еженедельные замеры</li>
+                        <li>✓ Поддержка 24/7</li>
+                    </ul>
+                    <div class="program-price">15 000 ₽<span>/мес</span></div>
+                    <a href="#contact" class="btn btn-primary btn-block">Выбрать программу</a>
+                </div>
+                
+                <div class="program-card program-card-featured">
+                    <div class="program-badge">Популярное</div>
+                    <div class="program-icon">💪</div>
+                    <h3>Набор массы</h3>
+                    <p class="program-description">
+                        Программа для набора мышечной массы и увеличения силы. 
+                        Progressive overload и правильный профицит калорий.
+                    </p>
+                    <ul class="program-features">
+                        <li>✓ 4 тренировки в неделю</li>
+                        <li>✓ План спортивного питания</li>
+                        <li>✓ Техника выполнения упражнений</li>
+                        <li>✓ Коррекция программы</li>
+                    </ul>
+                    <div class="program-price">18 000 ₽<span>/мес</span></div>
+                    <a href="#contact" class="btn btn-primary btn-block">Выбрать программу</a>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">🏃</div>
+                    <h3>Поддержание формы</h3>
+                    <p class="program-description">
+                        Для тех, кто хочет поддерживать форму и здоровый образ жизни. 
+                        Сбалансированные тренировки без перенапряжения.
+                    </p>
+                    <ul class="program-features">
+                        <li>✓ 2 тренировки в неделю</li>
+                        <li>✓ Коррекция техники</li>
+                        <li>✓ Общие рекомендации</li>
+                        <li>✓ Гибкий график</li>
+                    </ul>
+                    <div class="program-price">10 000 ₽<span>/мес</span></div>
+                    <a href="#contact" class="btn btn-primary btn-block">Выбрать программу</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Результаты клиентов -->
+    <section class="section results" id="results">
+        <div class="container">
+            <h2 class="section-title">Результаты клиентов</h2>
+            <p class="section-subtitle">Реальные истории трансформации моих подопечных</p>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://picsum.photos/seed/fitness1/300/400" alt="Александр результат">
+                    </div>
+                    <div class="result-info">
+                        <h4>Александр, 34 года</h4>
+                        <p class="result-stats">−18 кг за 4 месяца</p>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://picsum.photos/seed/fitness2/300/400" alt="Елена результат">
+                    </div>
+                    <div class="result-info">
+                        <h4>Елена, 28 лет</h4>
+                        <p class="result-stats">−12 кг за 3 месяца</p>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://picsum.photos/seed/fitness3/300/400" alt="Дмитрий результат">
+                    </div>
+                    <div class="result-info">
+                        <h4>Дмитрий, 42 года</h4>
+                        <p class="result-stats">+8 кг мышц за 6 месяцев</p>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-image">
+                        <img src="https://picsum.photos/seed/fitness4/300/400" alt="Ольга результат">
+                    </div>
+                    <div class="result-info">
+                        <h4>Ольга, 31 год</h4>
+                        <p class="result-stats">−15 кг за 5 месяцев</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://picsum.photos/seed/client1/60/60" alt="Александр М." class="review-avatar">
+                        <div class="review-author">
+                            <h4>Александр М.</h4>
+                            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Занимаюсь с Иваном уже полгода. Сбросил 18 кг, чувствую себя отлично!
+                        Иван всегда поддерживает, мотивирует и следит за техникой.
+                        Рекомендую всем, кто хочет реальных результатов!"
+                    </p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://picsum.photos/seed/client2/60/60" alt="Елена К." class="review-avatar">
+                        <div class="review-author">
+                            <h4>Елена К.</h4>
+                            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "После родов набрала лишний вес. Иван помог не только похудеть,
+                        но и полюбить спорт. Программы индивидуальные, питание без жёстких ограничений.
+                        Спасибо за новый образ жизни!"
+                    </p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://picsum.photos/seed/client3/60/60" alt="Дмитрий В." class="review-avatar">
+                        <div class="review-author">
+                            <h4>Дмитрий В.</h4>
+                            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Хотел набрать мышечную массу. За 6 месяцев +8 кг чистых мышц!
+                        Иван знает своё дело: правильная техника, прогрессия нагрузок,
+                        грамотное питание. Лучший тренер в городе!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Записаться на тренировку</h2>
+            <div class="contact-content">
+                <div class="contact-form-block">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                        </div>
+                        <div class="form-group">
+                            <label for="goal">Ваша цель</label>
+                            <select id="goal" name="goal">
+                                <option value="">Выберите цель</option>
+                                <option value="Похудение">Похудение</option>
+                                <option value="Набор массы">Набор массы</option>
+                                <option value="Поддержание формы">Поддержание формы</option>
+                                <option value="Другое">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Комментарий</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Расскажите немного о себе и своих целях"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            📩 Отправить заявку
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info-block">
+                    <h3>Контакты</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>Телефон</strong>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>ivan.fitness@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Адрес</strong>
+                            <p>г. Москва, ул. Спортивная, д. 10</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Я в социальных сетях:</h4>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn vk" title="ВКонтакте">VK</a>
+                            <a href="#" class="social-btn telegram" title="Telegram">TG</a>
+                            <a href="#" class="social-btn whatsapp" title="WhatsApp">WA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FITNESS<span>PRO</span></h4>
+                    <p>Персональный тренер Иван Петров</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <a href="#about">Обо мне</a>
+                    <a href="#programs">Программы</a>
+                    <a href="#results">Результаты</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>✉️ ivan.fitness@example.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Иван Петров. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Уведомление -->
+    <div class="notification" id="notification" style="display: none;">
+        <span class="notification-icon">✅</span>
+        <span class="notification-text">Заявка отправлена! Я свяжусь с вами в ближайшее время.</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

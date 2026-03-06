@@ -1,0 +1,305 @@
+/* ============================================
+   Fitness Trainer - Адаптивные стили
+   ============================================ */
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .program-card-featured {
+        transform: none;
+    }
+    
+    .program-card-featured:hover {
+        transform: translateY(-10px);
+    }
+    
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info-block {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Планшеты (до 768px) */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-primary);
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .nav.active {
+        display: flex;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .header-btn {
+        display: none;
+    }
+    
+    .hero {
+        padding-top: 100px;
+        min-height: auto;
+    }
+    
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .achievements {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form-block {
+        padding: 25px;
+    }
+}
+
+/* Мобильные (до 576px) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .hero-text h1 {
+        font-size: 26px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .about-text h3 {
+        font-size: 22px;
+    }
+    
+    .achievement-number {
+        font-size: 28px;
+    }
+    
+    .achievement-label {
+        font-size: 12px;
+    }
+    
+    .program-card {
+        padding: 25px 20px;
+    }
+    
+    .program-icon {
+        font-size: 48px;
+    }
+    
+    .program-card h3 {
+        font-size: 20px;
+    }
+    
+    .program-price {
+        font-size: 28px;
+    }
+    
+    .result-image img {
+        height: 250px;
+    }
+    
+    .review-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-form-block {
+        padding: 20px;
+    }
+    
+    .contact-form .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .social-buttons {
+        justify-content: center;
+    }
+    
+    .notification {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* Маленькие мобильные (до 375px) */
+@media (max-width: 375px) {
+    .hero-text h1 {
+        font-size: 22px;
+    }
+    
+    .section-title {
+        font-size: 22px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .btn-large {
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+}
+
+/* Пейзажная ориентация на мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    
+    .hero-image img {
+        max-height: 300px;
+        width: auto;
+    }
+}
+
+/* Печать */
+@media print {
+    .header,
+    .footer,
+    .btn,
+    .hero-image,
+    .contact-form-block {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        font-size: 12pt;
+    }
+    
+    .section {
+        padding: 20px 0;
+    }
+}
+
+/* Уменьшенное движение */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
