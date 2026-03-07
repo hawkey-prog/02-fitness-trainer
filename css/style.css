@@ -6,12 +6,12 @@
 :root {
     /* Цвета */
     --color-bg: #FFFFFF;
-    --color-bg-alt: #F9FAFB;
-    --color-text: #111827;
-    --color-text-secondary: #6B7280;
-    --color-accent: #E91E63;
-    --color-accent-hover: #C2185B;
-    --color-border: #E5E7EB;
+    --color-bg-alt: #F1F5F9;
+    --color-text: #0F172A;
+    --color-text-secondary: #64748B;
+    --color-accent: #3B82F6;
+    --color-accent-hover: #2563EB;
+    --color-border: #E2E8F0;
     
     /* Типографика */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -101,10 +101,10 @@ ul {
 
 @keyframes pulse {
     0%, 100% {
-        box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.4);
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
     }
     50% {
-        box-shadow: 0 0 0 12px rgba(233, 30, 99, 0);
+        box-shadow: 0 0 0 12px rgba(59, 130, 246, 0);
     }
 }
 
@@ -156,6 +156,11 @@ ul {
     letter-spacing: -0.02em;
 }
 
+.logo-name::before {
+    content: '💪';
+    margin-right: 8px;
+}
+
 /* ============================================
    Кнопки
    ============================================ */
@@ -178,12 +183,12 @@ ul {
 .btn-primary {
     background: var(--color-accent);
     color: #FFFFFF;
-    box-shadow: 0 4px 14px rgba(233, 30, 99, 0.3);
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
 }
 
 .btn-primary:hover {
     background: var(--color-accent-hover);
-    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
     transform: translateY(-1px);
 }
 
@@ -437,6 +442,12 @@ ul {
     text-align: center;
 }
 
+.review-stars {
+    font-size: 18px;
+    margin-bottom: var(--space-3);
+    letter-spacing: 2px;
+}
+
 .review-text {
     font-size: 15px;
     line-height: 1.7;
@@ -484,7 +495,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(233, 30, 99, 0.1);
+    background: rgba(59, 130, 246, 0.1);
     border-radius: var(--radius-full);
 }
 
@@ -533,7 +544,7 @@ ul {
 .form-group select:focus {
     outline: none;
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .form-group select {
