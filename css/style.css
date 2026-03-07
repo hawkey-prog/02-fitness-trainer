@@ -438,6 +438,12 @@ ul {
     margin: 0 auto;
 }
 
+.review-emoji {
+    font-size: 56px;
+    display: block;
+    text-align: center;
+}
+
 .review-content {
     text-align: center;
 }
